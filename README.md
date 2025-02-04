@@ -1,5 +1,5 @@
 # NBA Basketball Hub
-## A Java Spring Boot application that manages NBA player statistics using RESTful APIs, JPA for data persistence, and robust JUnit tests for service and repository layers.
+A Java Spring Boot application that manages NBA player statistics using RESTful APIs, JPA for data persistence, and  JUnit tests.
 
 # Features
 
@@ -11,25 +11,25 @@
 # Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/nba-basketball-hub.git
-cd nba-basketball-hub
+'git clone https://github.com/dylspruill/nba-hub.git'
+'cd nba-basketball-hub'
 
 2. Build the project using Maven:
-mvn clean install
+'mvn clean install'
 
 3. Run the application:
-mvn spring-boot:run
+'mvn spring-boot:run'
 
 # Usage
 
 * API Endpoints
 
 * Get all players:
-GET /api/v1/player
+'GET /api/v1/player'
 Add a new player:
-POST /api/v1/player
-Content-Type: application/json
-{
+'POST /api/v1/player'
+
+'{
   "name": "Stephen Curry",
   "team": "GSW",
   "games_played": 78,
@@ -45,49 +45,48 @@ Content-Type: application/json
   "pf": 150,
   "points": 2100,
   "eff": 2300
-}
+}'
 * Update an existing player:
-PUT /api/v1/player
-Content-Type: application/json
+'PUT /api/v1/player
 {
   "name": "Stephen Curry",
   "team": "Warriors",
   "points": 2200
 }
 * Delete a player:
-DELETE /api/v1/player/{playerName}
+'DELETE /api/v1/player/{playerName}'
 
 # Testing
 * JUnit tests are provided for the Player, PlayerService, and PlayerRepository classes.
   
 * Run all tests using Maven:
-mvn test
+'mvn test'
 
 * Example Test Case
 Test saving a player to the repository:
-@Test
+'@Test
 void testSavePlayer() {
     Player player = new Player("Kevin Durant", "OKC", 81, 3119, 731, 1433, 0.510, 334, 0.416, 679, 750, 0.905, 640, 374, 116, 105, 280, 143, 2280, 2462);
     playerRepository.save(player);
-    
+  
     Optional<Player> retrievedPlayer = playerRepository.findByName("Kevin Durant");
     assertTrue(retrievedPlayer.isPresent());
-    assertEquals("OKC", retrievedPlayer.get().getTeam());
+    assertEquals("OKC", retrievedPlayer.get().getTeam());'
 }
 # Development Setup
 
 1. Clone the repo and navigate into the project directory:
   
-git clone https://github.com/yourusername/nba-basketball-hub.git
-cd nba-basketball-hub
+git clone https://github.com/dylspruill/nba-hub.git
+'cd nba-basketball-hub'
 
 2. Set up the project dependencies:
-mvn install
+'mvn install'
 
 3. Run the application locally:
-mvn spring-boot:run
+'mvn spring-boot:run'
 Access API via:
-http://localhost:8080/api/v1/player
+'http://localhost:8080/api/v1/player'
 
 # Technologies Used
 
