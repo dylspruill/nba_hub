@@ -1,5 +1,5 @@
 # NBA Basketball Hub
-A Java Spring Boot application that manages NBA player statistics using RESTful APIs, JPA for data persistence, and  JUnit tests.
+A Java Spring Boot application that manages NBA player statistics using RESTful APIs, JPA for data persistence.
 
 # Features
 
@@ -66,7 +66,7 @@ PUT /api/v1/player
 ```
 * Delete a player:
 ```
-DELETE /api/v1/player/{playerName}'
+DELETE /api/v1/player/{playerName}
 ```
 
 # Testing
