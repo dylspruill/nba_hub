@@ -1,14 +1,14 @@
 # NBA Basketball Hub
 A Java Spring Boot application that manages NBA player statistics using RESTful APIs, JPA for data persistence.
 
-# Features
+## Features
 
 * Manage player statistics including points, assists, rebounds, and more.
 * RESTful API endpoints for adding, updating, retrieving, and deleting player data.
 * Comprehensive JUnit tests for Player, PlayerService, Player Controller, PlayerRepository.
 * Uses H2 in-memory database for testing.
   
-# Installation
+## Installation
 
 1. Clone the repository:
 ```
@@ -26,7 +26,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-# Usage
+## Usage
 API Endpoints
 
 * Get all players:
@@ -69,7 +69,7 @@ PUT /api/v1/player
 DELETE /api/v1/player/{playerName}
 ```
 
-# Testing
+## Testing
 JUnit tests are provided for the Player, PlayerService, and PlayerRepository classes.
   
 * Run all tests using Maven:
@@ -91,7 +91,7 @@ void testSavePlayer() {
 }
 ```
 
-# Technologies Used
+## Technologies Used
 
 * Java 11
 * Spring Boot
