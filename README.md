@@ -16,12 +16,12 @@ git clone https://github.com/dylspruill/nba-hub.git
 cd nba-basketball-hub
 ```
 
-3. Build the project using Maven:
+2. Build the project using Maven:
 ```
 mvn clean install
 ```
 
-5. Run the application:
+3. Run the application:
 ```
 mvn spring-boot:run
 ```
