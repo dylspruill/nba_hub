@@ -12,7 +12,7 @@ A Java Spring Boot application that manages NBA player statistics using RESTful 
 
 1. Clone the repository:
 ```
-git clone https://github.com/dylspruill/nba-hub.git'
+git clone https://github.com/dylspruill/nba-hub.git
 cd nba-basketball-hub
 ```
 
